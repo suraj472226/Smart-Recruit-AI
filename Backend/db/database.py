@@ -1,5 +1,5 @@
 import sqlite3
-# initial database setup
+
 def init_db():
     conn = sqlite3.connect("recruitment.db")
     cursor = conn.cursor()

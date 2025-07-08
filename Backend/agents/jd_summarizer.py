@@ -9,10 +9,12 @@ from typing import List
 from .cv_matcher import calculate_match_score
 from pdfminer.high_level import extract_text
 import docx
-
+import os
 logger = logging.getLogger(__name__)
 
-GEMINI_API_KEY  #api here
+
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "your_default_api_key_here")
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
 
 DB_FILE = "job_descriptions.db"
