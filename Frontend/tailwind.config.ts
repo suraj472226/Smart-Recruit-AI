@@ -1,19 +1,11 @@
-import type { Config } from "tailwindcss" with { "resolution-mode": "import" };
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    "./src/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./pages/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {
-      // Customizations will be added 
-    },
+    extend: {},
   },
-  darkMode: "class",
   plugins: [],
-};
-
-export default config;
+}
