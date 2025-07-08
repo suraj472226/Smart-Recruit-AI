@@ -1,0 +1,17 @@
+{
+  // "files": [], // Removed as it is not needed
+  "compilerOptions": {
+    "module": "Node16",
+    "moduleResolution": "node16",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "noImplicitAny": false,
+    "noUnusedParameters": false,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "strictNullChecks": false
+  }
+}
